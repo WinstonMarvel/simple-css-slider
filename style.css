@@ -1,0 +1,76 @@
+
+#side-nav-menu{
+    height: 100%; /* Stretches to the full-height of the page*/
+    width: 0; /* 0 width - change this with :target psuedo selector */
+    position: fixed; /* Fixes it in place */
+    z-index: 1; /* Stays above the items on the page */
+    top: 0;
+    left: 0;
+    
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    
+    transition: 0.8s; /* 0.8 second transition effect to slide in the navmenu */
+    
+	/*styling*/
+    padding-top: 60px; /* Place content 60px from the top */
+    background-color: #111; 
+    opacity: 0.8;   
+}
+
+#side-nav-menu:target
+	{
+	 width: 250px; /* Menu slides to 250px with 0.8second transition*/
+	 transition: 0.8s;
+}
+
+
+/* Positioning and styling the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+/*SOME MORE STYLING*/
+
+#hamburger-menu{
+	font-size: 30px;
+	text-decoration: none;
+
+}
+
+
+.sidenav a {    
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFF;
+    display: block;
+    transition: 0.8s;
+}
+
+
+h1{	
+	font-size: 48;
+	text-align: center;
+}
+
+p{text-align: center;}
+
+body{
+	color:#222;
+	background-color: #fff;
+	
+}
+
+li{
+    list-style: none;
+}
